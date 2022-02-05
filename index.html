@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="range-container">
+                <h4 class="range-head">Generate New Array</h4>
+                <input type="range" min="5" max="100" name="inputrange" id="Array-range" oninput="changeRange()">
+            </div>
+            <div class="speed-container">
+                <h4>Set Time</h4>
+                <input type="range" min="1" max="1000" name="inputspeed" id="speed-range" ">
+            </div>
+            <div class=" algo-container">
+                <label for="sorting-algos">Select Algorithm</label>
+                <select name="sorting-algos" id="drop-menu" size="1">
+                    <option style="font-family: Arial, Helvetica, sans-serif" value="Bubble-Sort">Bubble Sort</option>
+                    <option style="font-family: Arial, Helvetica, sans-serif" value="Quick-sort">Quick Sort</option>
+                    <option style="font-family: Arial, Helvetica, sans-serif" value="Merge-Sort">Merge Sort</option>
+                    <option style="font-family: Arial, Helvetica, sans-serif" value="a-Sort">c Sort</option>
+                    <option style="font-family: Arial, Helvetica, sans-serif" value="b-Sort">b Sort</option>
+                    <option style="font-family: Arial, Helvetica, sans-serif" value="c-Sort">c Sort</option>
+                </select>
+            </div>
+            <div class="sort-btn">
+                <button id="bubble" onclick="runBubble()">SORT!</button>
+            </div>
+        </div>
+    </header>
+    <div class="main-grid" id="grid">
+    </div>
+</body>
+
+<script src="./js/index.js"></script>
+<script src="./js/sortingHelpers.js"></script>
+<script src="./js/sortingAlgos.js"></script>
+
+
+<!-- https://clementmihailescu.github.io/Sorting-Visualizer/ -->
+
+</html>
