@@ -30,6 +30,10 @@ input [type='range']:hover {
     cursor: pointer;
 }
 
+input:hover {
+    cursor: pointer;
+}
+
 input[type="range"]::-moz-range-progress {
     background-color: #59EDC9;
     height: 8px;
