@@ -34,10 +34,12 @@ function swap(el1, el2) {
 }
 
 function disablebtn(elem) {
+    elem.classList.add('disabled');
     elem.disabled = true;
 }
 
 function enablebtn(elem) {
+    elem.classList.remove('disabled');
     elem.disabled = false;
 }
 
